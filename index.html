@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            #hero {
+                background-image: url("./images/sports-shoes.jpg");
+            }
+            #backpack {
+                background-image: url("./images/backpack.jpg");
+            }
+            #games {
+                background-image: url("./images/games.jpg");
+            }
+            .perfume {
+                background-image: url("./images/perfume.jpg");
+            }
+            .woman {
+                background-image: url("./images/woman.jpg");
+            }
+            .watch {
+                background-image: url("./images/watch.jpg");
+            }
+            .shoes {
+                background-image: url("./images/shoes.jpg");
+            }
+        </style>
+        <header>
+            <div class="flex justify-between p-4 text-gray-800">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>NY</span>
+                </div>
+                <h1 class="text-3xl font-semibold">Brand</h1>
+                <div>
+                    <button class="mx-3 cursor-pointer">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button
+                        class="mx-3 cursor-pointer sm:hidden"
+                        id="menu-button"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-4 hidden sm:block" id="menu">
+                <ul class="sm:flex sm:justify-center sm:items-center">
+                    <li class="mx-3 sm:mt-3">
+                        <a
+                            href="#"
+                            class="no-underline text-gray-400 hover:underline"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="mx-3 sm:mt-3">
+                        <a
+                            href="#"
+                            class="no-underline text-gray-400 hover:underline"
+                            >Shop</a
+                        >
+                    </li>
+                    <li class="mx-3 sm:mt-3">
+                        <a
+                            href="#"
+                            class="no-underline text-gray-400 hover:underline"
+                            >Categories</a
+                        >
+                    </li>
+                    <li class="mx-3 sm:mt-3">
+                        <a
+                            href="#"
+                            class="no-underline text-gray-400 hover:underline"
+                            >Contact</a
+                        >
+                    </li>
+                    <li class="mx-3 sm:mt-3">
+                        <a
+                            href="#"
+                            class="no-underline text-gray-400 hover:underline"
+                            >About</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="relative mt-6 max-w-lg mx-auto">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                    class="w-full py-2 pr-4 border rounded-md pl-10 focus:border-blue-500 focus:outline-none focus:shadow-outline"
+                    type="text"
+                    placeholder="Search"
+                />
+            </div>
+        </header>
+        <main class="mt-6">
+            <div class="container px-5 mx-auto">
+                <div
+                    class="h-64 rounded-md overflow-hidden bg-cover bg-center"
+                    id="hero"
+                >
+                    <div
+                        class="bg-gray-900 bg-opacity-50 flex items-center h-full"
+                    >
+                        <div class="px-10 max-w-xl">
+                            <h2 class="text-2xl text-white font-semibold">
+                                Sport Shoes
+                            </h2>
+                            <p class="mt-2 text-gray-400">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Tempore facere provident
+                                molestias ipsam sint voluptatum pariatur.
+                            </p>
+                            <button
+                                class="flex bg-blue-600 text-white text-sm items-center mt-4 px-3 py-2 uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                            >
+                                <span>Shop Now</span>
+                                <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:flex mt-8 md:mx-4">
+                    <div
+                        class="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2"
+                        id="backpack"
+                    >
+                        <div
+                            class="bg-gray-900 bg-opacity-50 flex items-center h-full"
+                        >
+                            <div class="px-10 max-w-xl">
+                                <h2 class="text-2xl text-white font-semibold">
+                                    Back Pack
+                                </h2>
+                                <p class="mt-2 text-gray-400">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Tempore facere provident
+                                    molestias ipsam sint voluptatum pariatur.
+                                </p>
+                                <button
+                                    class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none"
+                                >
+                                    <span>Shop Now</span>
+                                    <i class="fa-solid fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2"
+                        id="games"
+                    >
+                        <div
+                            class="bg-gray-900 bg-opacity-50 flex items-center h-full"
+                        >
+                            <div class="px-10 max-w-xl">
+                                <h2 class="text-2xl text-white font-semibold">
+                                    Games
+                                </h2>
+                                <p class="mt-2 text-gray-400">
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Tempore facere provident
+                                    molestias ipsam sint voluptatum pariatur.
+                                </p>
+                                <button
+                                    class="flex items-center mt-4 text-white text-sm uppercase font-medium rounded hover:underline focus:outline-none"
+                                >
+                                    <span>Shop Now</span>
+                                    <svg
+                                        class="h-5 w-5 mx-2"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-14">
+                    <h3 class="text-gray-500 font-medium text-2xl">Fashions</h3>
+                    <div
+                        class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6"
+                    >
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover perfume"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">Chanel</h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover shoes"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">Man Mix</h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover watch"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">
+                                    Classic watch
+                                </h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover woman"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">
+                                    woman mix
+                                </h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-14">
+                    <h3 class="text-gray-500 font-medium text-2xl">Fashions</h3>
+                    <div
+                        class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6"
+                    >
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover perfume"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">Chanel</h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover shoes"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">Man Mix</h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover watch"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">
+                                    Classic watch
+                                </h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden"
+                        >
+                            <div
+                                class="flex items-end justify-end h-56 w-full bg-cover woman"
+                            >
+                                <button
+                                    class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                                >
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <div class="px-5 py-3">
+                                <h3 class="uppercase text-gray-700">
+                                    woman mix
+                                </h3>
+                                <span class="text-gray-500 mt-2">$12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer
+            class="fixed bottom-0 w-full bg-slate-700 p-5 text-center text-white"
+        >
+            This is a E-commerce home page by khatabwedaa.
+            <a href="#" class="underline"> Component details </a>
+        </footer>
+        <script>
+            let toggleMenu = document.getElementById("menu-button");
+            let menu = document.getElementById("menu");
+
+            toggleMenu.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>
